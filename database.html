@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>데이터베이스 수업 소개</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body class="light-mode">
+    <!-- 네비게이션 바 -->
+    <header class="navbar">
+		<a href="index.html" class="subject-link">
+			<div class="nav-left">
+				<img src="images/logo.png" alt="학교 로고" class="school-logo">
+				<span class="site-title">수업 소개</span>
+			</div>
+		</a>
+        <nav class="nav-center">
+            <ul class="nav-menu">
+                <li><a href="index.html">메인</a></li>
+                <li class="dropdown">
+                    <a href="database.html">데이터베이스</a>
+                    <ul class="dropdown-content">
+                        <li><a href="database.html#intro">과목소개</a></li>
+                        <li><a href="database.html#book">교재소개</a></li>
+                        <li><a href="database.html#curriculum">커리큘럼</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="webprogramming.html">웹프로그래밍</a>
+                    <ul class="dropdown-content">
+                        <li><a href="webprogramming.html#intro">과목소개</a></li>
+                        <li><a href="webprogramming.html#book">교재소개</a></li>
+                        <li><a href="webprogramming.html#curriculum">커리큘럼</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="server.html">서버구축</a>
+                    <ul class="dropdown-content">
+                        <li><a href="server.html#intro">과목소개</a></li>
+                        <li><a href="server.html#book">교재소개</a></li>
+                        <li><a href="server.html#curriculum">커리큘럼</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="datastructure.html">자료구조</a>
+                    <ul class="dropdown-content">
+                        <li><a href="datastructure.html#intro">과목소개</a></li>
+                        <li><a href="datastructure.html#book">교재소개</a></li>
+                        <li><a href="datastructure.html#curriculum">커리큘럼</a></li>
+                    </ul>
+                </li>
+                <li><a href="devinfo.html">포트폴리오</a></li>
+            </ul>
+        </nav>
+        <div class="nav-right">
+            <button id="mode-toggle">🌙</button>
+        </div>
+    </header>
+
+    <!-- 배너 -->
+    <section class="banner">
+        <img src="images/database_image.jpg" alt="데이터베이스" class="banner-image">
+        <h1 class="banner-title">데이터베이스</h1>
+    </section>
+
+<main class="subject-content">
+
+    <!-- 과목 소개 -->
+    <section id="intro" class="section-block">
+        <h2>과목 소개</h2>
+        <p>
+			데이터베이스 과목은 IT 분야의 필수 기반 지식인 데이터베이스의 개념과 실무적인 내용을 학습하여, 관련 전문 역량을 갖출 수 있도록 구성되어 있습니다. 데이터베이스의 원리부터 실제 활용까지 이론과 실습을 병행하여 학습함으로써, 향후 취업에 필요한 기초 지식과 실무 능력을 함께 함양하는 것을 목표로 합니다.
+			학습자는 데이터베이스 관련 전문 기술을 습득함으로써 취업 경쟁력을 높일 수 있으며, 실무 중심의 사례를 통해 실질적인 문제 해결 능력과 창의적 사고 능력을 기를 수 있습니다. 본 교과목은 데이터 관리 및 활용에 대한 이론적 이해와 함께 실용적인 역량 강화를 지원합니다.
+        </p>
+    </section>
+
+    <!-- 교재 소개 -->
+    <h2 id="book">교재 소개</h2>
+    <section class="section-block book-section">
+        <img src="images/database_book.webp" alt="데이터베이스 교재" class="subject-book-image">
+        <div class="book-description">
+            <p>
+                <strong>사용 교재:</strong> 프로젝트로 배우는 데이터베이스 설계<br>
+                <strong>저자:</strong> 김은경<br>
+                <strong>출판사:</strong> 한빛아카데미<br><br>
+                본 교재는 데이터베이스의 기본 개념부터 고급 주제까지 폭넓게 다루며, 실습 예제와 연습문제가 잘 구성되어 있어 학습에 적합합니다.
+            </p>
+        </div>
+    </section>
+
+    <!-- 커리큘럼 -->
+    <section id="curriculum" class="section-block">
+        <h2>커리큘럼</h2>
+
+        <details>
+            <summary><strong>1장: 데이터베이스 개요</strong></summary>
+            <p>데이터와 데이터베이스의 차이를 이해하고, 3단계 데이터베이스 구조를 통해 데이터 독립성과 데이터 언어의 개념, DBMS와 사용자 역할을 학습한다.</p>
+			<div class="quiz-container">
+				<h3>퀴즈: DB에 대해 잘못 설명된것은?</h3>
+				<form id="quiz-form-1010">
+					<label><input type="radio" name="answer" value="1"> DB는 컴퓨터가 접근할 수 있는 저장 장치에 기록된 저장 데이터다</label><br>
+					<label><input type="radio" name="answer" value="2"> DB는 조직을 운영하는 데 반드시 필요한 운영 데이터다</label><br>
+					<label><input type="radio" name="answer" value="3"> DB는 한 조직의 여러 부서에서 사용하는 데이터를 중복이 전혀 없는 상태로 한 곳에 모아 관리하는 통합 데이터다</label><br>
+					<label><input type="radio" name="answer" value="4"> DB는 한 조직이 공용으로 사용하는 데이터다</label><br><br>
+					<button type="button" onclick="checkAnswerById('1010')">정답 확인</button>
+					<p id="quiz-result-1010" class="quiz-result"></p>
+				</form>
+			</div>
+        </details>
+        <details>
+            <summary><strong>2장: 데이터베이스 설계 개요</strong></summary>
+            <p>데이터의 종류를 구분하고, 데이터 모델링의 필요성과 절차, 데이터베이스 구축의 6단계를 개관한다.</p>
+			<div class="quiz-container">
+				<h3>퀴즈: 테스트 (정답1)</h3>
+				<form id="quiz-form-9999">
+					<label><input type="radio" name="answer" value="1"> 테스트</label><br>
+					<label><input type="radio" name="answer" value="2"> 를 위한</label><br>
+					<label><input type="radio" name="answer" value="3"> 퀴즈</label><br>
+					<label><input type="radio" name="answer" value="4"> 목록입니다</label><br><br>
+					<button type="button" onclick="checkAnswerById('9999')">정답 확인</button>
+					<p id="quiz-result-9999" class="quiz-result"></p>
+				</form>
+			</div>
+        </details>
+        <details>
+            <summary><strong>3장: 요구 수집 및 분석</strong></summary>
+            <p>요구 수집 및 분석의 전반적인 과정을 이해하고, 데이터 및 트랜잭션 요구 명세서를 작성하는 방법과 사례를 학습한다.</p>
+			<div class="quiz-container">
+				<h3>퀴즈: 테스트 (정답1)</h3>
+				<form id="quiz-form-9999">
+					<label><input type="radio" name="answer" value="1"> 테스트</label><br>
+					<label><input type="radio" name="answer" value="2"> 를 위한</label><br>
+					<label><input type="radio" name="answer" value="3"> 퀴즈</label><br>
+					<label><input type="radio" name="answer" value="4"> 목록입니다</label><br><br>
+					<button type="button" onclick="checkAnswerById('9999')">정답 확인</button>
+					<p id="quiz-result-9999" class="quiz-result"></p>
+				</form>
+			</div>
+        </details>
+        <details>
+            <summary><strong>4장: ER 모델</strong></summary>
+            <p>ER 모델의 개념과 구성 요소(개체, 속성, 관계)를 익히고, ER 다이어그램 작성과 강화된 ER 모델을 이해한다.</p>
+			<div class="quiz-container">
+				<h3>퀴즈: 테스트 (정답1)</h3>
+				<form id="quiz-form-9999">
+					<label><input type="radio" name="answer" value="1"> 테스트</label><br>
+					<label><input type="radio" name="answer" value="2"> 를 위한</label><br>
+					<label><input type="radio" name="answer" value="3"> 퀴즈</label><br>
+					<label><input type="radio" name="answer" value="4"> 목록입니다</label><br><br>
+					<button type="button" onclick="checkAnswerById('9999')">정답 확인</button>
+					<p id="quiz-result-9999" class="quiz-result"></p>
+				</form>
+			</div>
+        </details>
+        <details>
+            <summary><strong>5장: 개념적 설계 기초</strong></summary>
+            <p>개념적 설계의 흐름과 요소들을 바탕으로 개념적 스키마를 모델링하는 기초 방법과 사례를 학습한다.</p>
+			<div class="quiz-container">
+				<h3>퀴즈: 테스트 (정답1)</h3>
+				<form id="quiz-form-9999">
+					<label><input type="radio" name="answer" value="1"> 테스트</label><br>
+					<label><input type="radio" name="answer" value="2"> 를 위한</label><br>
+					<label><input type="radio" name="answer" value="3"> 퀴즈</label><br>
+					<label><input type="radio" name="answer" value="4"> 목록입니다</label><br><br>
+					<button type="button" onclick="checkAnswerById('9999')">정답 확인</button>
+					<p id="quiz-result-9999" class="quiz-result"></p>
+				</form>
+			</div>
+        </details>
+        <details>
+            <summary><strong>6장: 개념적 설계 심화</strong></summary>
+            <p>	개념적 설계의 심화 내용을 통해 개체, 관계, 속성의 고급 개념과 정제 방법을 익히고 이를 스키마 모델링에 적용하는 방법을 배운다.</p>
+			<div class="quiz-container">
+				<h3>퀴즈: 테스트 (정답1)</h3>
+				<form id="quiz-form-9999">
+					<label><input type="radio" name="answer" value="1"> 테스트</label><br>
+					<label><input type="radio" name="answer" value="2"> 를 위한</label><br>
+					<label><input type="radio" name="answer" value="3"> 퀴즈</label><br>
+					<label><input type="radio" name="answer" value="4"> 목록입니다</label><br><br>
+					<button type="button" onclick="checkAnswerById('9999')">정답 확인</button>
+					<p id="quiz-result-9999" class="quiz-result"></p>
+				</form>
+			</div>
+        </details>
+        <details>
+            <summary><strong>7장: 관계 데이터 모델</strong></summary>
+            <p>관계 데이터 모델의 기초 개념과 릴레이션의 특성, 데이터베이스 키와 무결성 제약조건을 이해한다.</p>
+			<div class="quiz-container">
+				<h3>퀴즈: 테스트 (정답1)</h3>
+				<form id="quiz-form-9999">
+					<label><input type="radio" name="answer" value="1"> 테스트</label><br>
+					<label><input type="radio" name="answer" value="2"> 를 위한</label><br>
+					<label><input type="radio" name="answer" value="3"> 퀴즈</label><br>
+					<label><input type="radio" name="answer" value="4"> 목록입니다</label><br><br>
+					<button type="button" onclick="checkAnswerById('9999')">정답 확인</button>
+					<p id="quiz-result-9999" class="quiz-result"></p>
+				</form>
+			</div>
+        </details>
+        <details>
+            <summary><strong>8장: 논리적 설계 기초</strong></summary>
+            <p>개념적 설계를 논리적 스키마로 변환하는 방법을 다양한 요소(개체, 관계, 다중치 속성 등)에 따라 학습한다.</p>
+			<div class="quiz-container">
+				<h3>퀴즈: 테스트 (정답1)</h3>
+				<form id="quiz-form-9999">
+					<label><input type="radio" name="answer" value="1"> 테스트</label><br>
+					<label><input type="radio" name="answer" value="2"> 를 위한</label><br>
+					<label><input type="radio" name="answer" value="3"> 퀴즈</label><br>
+					<label><input type="radio" name="answer" value="4"> 목록입니다</label><br><br>
+					<button type="button" onclick="checkAnswerById('9999')">정답 확인</button>
+					<p id="quiz-result-9999" class="quiz-result"></p>
+				</form>
+			</div>
+        </details>
+        <details>
+            <summary><strong>9장: 논리적 설계 심화</strong></summary>
+            <p>개체 통합, 이력 데이터 및 코드 모델링을 포함한 고급 논리적 설계 기법과 논리적 스키마 모델링 사례를 익힌다.</p>
+			<div class="quiz-container">
+				<h3>퀴즈: 테스트 (정답1)</h3>
+				<form id="quiz-form-9999">
+					<label><input type="radio" name="answer" value="1"> 테스트</label><br>
+					<label><input type="radio" name="answer" value="2"> 를 위한</label><br>
+					<label><input type="radio" name="answer" value="3"> 퀴즈</label><br>
+					<label><input type="radio" name="answer" value="4"> 목록입니다</label><br><br>
+					<button type="button" onclick="checkAnswerById('9999')">정답 확인</button>
+					<p id="quiz-result-9999" class="quiz-result"></p>
+				</form>
+			</div>
+        </details>
+        <details>
+            <summary><strong>10장: 정규화</strong></summary>
+            <p>데이터 이상 현상을 방지하기 위한 함수적 종속과 정규화 개념을 배우고, 다양한 정규형과 역정규화 기법을 통해 데이터 구조를 최적화한다.</p>
+			<div class="quiz-container">
+				<h3>퀴즈: 테스트 (정답1)</h3>
+				<form id="quiz-form-9999">
+					<label><input type="radio" name="answer" value="1"> 테스트</label><br>
+					<label><input type="radio" name="answer" value="2"> 를 위한</label><br>
+					<label><input type="radio" name="answer" value="3"> 퀴즈</label><br>
+					<label><input type="radio" name="answer" value="4"> 목록입니다</label><br><br>
+					<button type="button" onclick="checkAnswerById('9999')">정답 확인</button>
+					<p id="quiz-result-9999" class="quiz-result"></p>
+				</form>
+			</div>
+        </details>
+        <details>
+            <summary><strong>11장: 물리적 설계</strong></summary>
+            <p>데이터 저장의 효율성을 위한 물리적 설계 방법과 인덱스, 뷰 설계 및 내부 스키마 작성 사례를 학습한다.</p>
+			<div class="quiz-container">
+				<h3>퀴즈: 테스트 (정답1)</h3>
+				<form id="quiz-form-9999">
+					<label><input type="radio" name="answer" value="1"> 테스트</label><br>
+					<label><input type="radio" name="answer" value="2"> 를 위한</label><br>
+					<label><input type="radio" name="answer" value="3"> 퀴즈</label><br>
+					<label><input type="radio" name="answer" value="4"> 목록입니다</label><br><br>
+					<button type="button" onclick="checkAnswerById('9999')">정답 확인</button>
+					<p id="quiz-result-9999" class="quiz-result"></p>
+				</form>
+			</div>
+        </details>
+        <details>
+            <summary><strong>12장: 데이터베이스 구현</strong></summary>
+            <p>테이블과 인덱스 생성, 데이터 조작, 뷰 및 시퀀스 처리 등 데이터베이스 구현을 위한 구체적인 SQL 명령과 사례를 익힌다.</p>
+			<div class="quiz-container">
+				<h3>퀴즈: 테스트 (정답1)</h3>
+				<form id="quiz-form-9999">
+					<label><input type="radio" name="answer" value="1"> 테스트</label><br>
+					<label><input type="radio" name="answer" value="2"> 를 위한</label><br>
+					<label><input type="radio" name="answer" value="3"> 퀴즈</label><br>
+					<label><input type="radio" name="answer" value="4"> 목록입니다</label><br><br>
+					<button type="button" onclick="checkAnswerById('9999')">정답 확인</button>
+					<p id="quiz-result-9999" class="quiz-result"></p>
+				</form>
+			</div>
+        </details>
+
+    </section>
+
+</main>
+
+    <!-- 바닥글 -->
+    <footer class="site-footer">
+        <p>© 2025 청운대학교 컴퓨터공학과</p>
+        <p>깃허브: <a href="~~Github 주소를 입력하세요~~" target="_blank">~~Github 주소~~</a></p>
+        <img src="images/footer_logo.svg" alt="학교 로고" class="footer-logo">
+    </footer>
+</body>
+</html>

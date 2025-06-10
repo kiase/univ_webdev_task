@@ -1,0 +1,315 @@
+/* 공통 설정 */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-mode {
+    background-color: #121212;
+    color: #f0f0f0;
+}
+
+/* 네비게이션 바 */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #004080;
+    color: white;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+.nav-left:hover ~ .navbar,
+.nav-left:hover {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.nav-left:hover .school-logo {
+    height: 160px;
+    transition: height 0.3s ease;
+}
+
+.nav-left:hover .site-title {
+    font-size: 3rem;
+    transition: font-size 0.3s ease;
+}
+
+.school-logo {
+    height: 40px;
+    margin-right: 10px;
+    transition: height 0.3s ease;
+}
+
+.site-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: font-size 0.3s ease;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-menu li {
+    position: relative;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+.nav-menu a:hover {
+    background-color: #0059b3;
+    border-radius: 5px;
+}
+
+/* 드롭다운 */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #0059b3;
+    min-width: 150px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content li a {
+    padding: 10px;
+    text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.nav-right button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+/* 배너 */
+.banner {
+    position: relative;
+    text-align: center;
+}
+
+.banner-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: height 0.3s ease;
+}
+
+.banner-title {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2rem;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 40px;
+    border-radius: 10px;
+    white-space: nowrap;
+    transition: font-size 0.3s ease, padding 0.3s ease;
+}
+
+.banner.expand .banner-title {
+    font-size: 4rem;
+    padding: 10px 80px;
+}
+
+.banner.expand .banner-image {
+    height: 60vh;
+}
+
+/* 과목 블록 */
+.subject-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 30px;
+}
+
+.subject {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f3f3f3;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.subject-image {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.subject h2 {
+    margin: 3px 0;
+}
+
+.dark-mode .subject {
+    background-color: #1e1e1e;
+}
+
+.subject-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.info-bar {
+    height: 100px;
+    background-color: #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    color: #333;
+    margin-top: 40px;
+}
+
+.dark-mode .info-bar {
+    background-color: #4e4e4e;
+    color: #fff;
+}
+
+/* 푸터 */
+.site-footer {
+    background-color: #004080;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.site-footer a {
+    color: #a8d1ff;
+    text-decoration: none;
+}
+
+.footer-logo {
+    height: 40px;
+    margin-top: 10px;
+}
+
+
+/* 과목 페이지 본문 스타일 */
+/* 과목 페이지 본문 스타일 */
+/* 과목 페이지 본문 스타일 */
+/* 과목 페이지 본문 스타일 */
+/* 과목 페이지 본문 스타일 */
+.subject-content {
+    max-width: 60vw;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.subject-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 12px;
+}
+
+.subject-content p {
+    font-size: 1.25rem;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+/* 공통 섹션 블록 */
+.section-block {
+    margin-bottom: 50px;
+}
+
+.section-block summary {
+	font-size: 1.4rem;
+}
+
+/* 교재 소개 구성 */
+.book-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.subject-book-image {
+    max-width: 400px;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.book-description {
+    flex: 1;
+    min-width: 200px;
+}
+
+/* 커리큘럼 박스 */
+#curriculum details {
+    margin-bottom: 15px;
+    background-color: #f4f4f4;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.dark-mode #curriculum details {
+    background-color: #2a2a2a;
+    color: #f0f0f0;
+}
+
+#curriculum summary {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.quiz-container {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.quiz-container h3 {
+    margin-bottom: 15px;
+}
+
+.quiz-result {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.dark-mode .quiz-container {
+    background-color: #2a2a2a;
+    color: #fff;
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>청운대학교 2학년 1학기 전공수업 소개</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body class="light-mode">
+    <!-- 네비게이션 바 -->
+    <header class="navbar">
+		<a href="index.html" class="subject-link">
+			<div class="nav-left">
+				<img src="images/logo.png" alt="학교 로고" class="school-logo">
+				<span class="site-title">수업 소개</span>
+			</div>
+		</a>
+        <nav class="nav-center">
+            <ul class="nav-menu">
+                <li><a href="index.html">메인</a></li>
+                <li class="dropdown">
+                    <a href="database.html">데이터베이스</a>
+                    <ul class="dropdown-content">
+                        <li><a href="database.html#intro">과목소개</a></li>
+                        <li><a href="database.html#book">교재소개</a></li>
+                        <li><a href="database.html#curriculum">커리큘럼</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="webprogramming.html">웹프로그래밍</a>
+                    <ul class="dropdown-content">
+                        <li><a href="webprogramming.html#intro">과목소개</a></li>
+                        <li><a href="webprogramming.html#book">교재소개</a></li>
+                        <li><a href="webprogramming.html#curriculum">커리큘럼</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="server.html">서버구축</a>
+                    <ul class="dropdown-content">
+                        <li><a href="server.html#intro">과목소개</a></li>
+                        <li><a href="server.html#book">교재소개</a></li>
+                        <li><a href="server.html#curriculum">커리큘럼</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="datastructure.html">자료구조</a>
+                    <ul class="dropdown-content">
+                        <li><a href="datastructure.html#intro">과목소개</a></li>
+                        <li><a href="datastructure.html#book">교재소개</a></li>
+                        <li><a href="datastructure.html#curriculum">커리큘럼</a></li>
+                    </ul>
+                </li>
+                <li><a href="devinfo.html">포트폴리오</a></li>
+            </ul>
+        </nav>
+        <div class="nav-right">
+            <button id="mode-toggle">🌙</button>
+        </div>
+    </header>
+
+    <!-- 배너 -->
+    <section class="banner">
+        <img src="images/banner.jpg" alt="학교 전경" class="banner-image">
+        <h1 class="banner-title">청운대학교 컴퓨터공학과 2-1학기 전공수업 소개</h1>
+    </section>
+
+    <!-- 과목 요약 블록 -->
+    <main class="subject-list">
+		<a href="database.html" class="subject-link">
+			<section class="subject">
+				<img src="images/database_image.jpg" alt="데이터베이스" class="subject-image">
+				<h2>데이터베이스</h2>
+				<p>데이터베이스 과목은 정보 시스템에서 핵심적인 역할을 수행하는 데이터 관리 기술을 학습하는 과목입니다.<br>
+						이론 수업과 실습을 병행하여 관계형 데이터베이스, SQL, 정규화, 트랜잭션 등의 주요 개념을 이해하고 적용할 수 있도록 구성되어 있습니다.</p>
+			</section>
+		</a>
+		<a href="webprogramming.html" class="subject-link">
+			<section class="subject">
+				<img src="images/webprogramming_image.png" alt="웹프로그래밍" class="subject-image">
+				<h2>웹프로그래밍</h2>
+				<p>웹프로그래밍 과목은 HTML, CSS, JavaScript 등 웹 콘텐츠 제작에 필수적인 언어를 학습하여 정적 및 동적 웹사이트를 직접 구현해보는 실습 중심의 과목입니다.<br>
+						수업을 통해 웹페이지 구조, 디자인, 사용자 상호작용 구현 등 다양한 웹 기술을 익히며, 온라인 콘텐츠 기획 및 배포에 필요한 전반적인 실무 능력을 향상시키는 것을 목표로 합니다.</p>
+				</section>
+		</a>
+		<a href="server.html" class="subject-link">
+			<section class="subject">
+				<img src="images/server_image.jpg" alt="서버구축" class="subject-image">
+				<h2>서버구축</h2>
+				<p>서버구축 및 관리 과목은 리눅스 운영체제를 기반으로 시스템 서버를 구성하고 운영하는 방법을 학습하는 과목입니다.<br>
+						Ubuntu와 같은 실습 환경을 활용하여 웹서버, 메일서버, DNS서버 등 다양한 서버 환경을 구성해보며, 실무에서 필요한 서버 운영 및 보안 관리 역량을 함께 배양합니다.</p>
+			</section>
+		</a>
+		<a href="datastructure.html" class="subject-link">
+			<section class="subject">
+				<img src="images/datastructure_image.jpg" alt="자료구조" class="subject-image">
+				<h2>자료구조</h2>
+				<p>자료구조 과목은 소프트웨어 개발에 필요한 데이터 구성 방식과 알고리즘 처리 기법을 학습하는 과목입니다.<br>
+						배열, 연결 리스트, 스택, 큐, 트리, 그래프 등 다양한 자료구조의 개념과 구현 방법을 익히며, 이론적 이해와 함께 프로그램 개발에의 응용력을 높이는 것을 목표로 합니다.</p>
+			</section>
+		</a>
+    </main>
+	<a href="devinfo.html" class="subject-link">
+		<section class="info-bar">
+			<h2>제작자 포트폴리오</h2>
+			<p>developer portfolio</p>
+		</section>
+	</a>
+    <!-- 바닥글 -->
+    <footer class="site-footer">
+        <p>© 2025 청운대학교 컴퓨터공학과</p>
+        <p>깃허브: <a href="~~Github 주소를 입력하세요~~" target="_blank">~~Github 주소~~</a></p>
+        <img src="images/footer_logo.svg" alt="학교 로고" class="footer-logo">
+    </footer>
+</body>
+</html>

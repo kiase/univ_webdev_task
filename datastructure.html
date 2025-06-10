@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자료구조 수업 소개</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body class="light-mode">
+    <!-- 네비게이션 바 -->
+    <header class="navbar">
+		<a href="index.html" class="subject-link">
+			<div class="nav-left">
+				<img src="images/logo.png" alt="학교 로고" class="school-logo">
+				<span class="site-title">수업 소개</span>
+			</div>
+		</a>
+        <nav class="nav-center">
+            <ul class="nav-menu">
+                <li><a href="index.html">메인</a></li>
+                <li class="dropdown">
+                    <a href="database.html">데이터베이스</a>
+                    <ul class="dropdown-content">
+                        <li><a href="database.html#intro">과목소개</a></li>
+                        <li><a href="database.html#book">교재소개</a></li>
+                        <li><a href="database.html#curriculum">커리큘럼</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="webprogramming.html">웹프로그래밍</a>
+                    <ul class="dropdown-content">
+                        <li><a href="webprogramming.html#intro">과목소개</a></li>
+                        <li><a href="webprogramming.html#book">교재소개</a></li>
+                        <li><a href="webprogramming.html#curriculum">커리큘럼</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="server.html">서버구축</a>
+                    <ul class="dropdown-content">
+                        <li><a href="server.html#intro">과목소개</a></li>
+                        <li><a href="server.html#book">교재소개</a></li>
+                        <li><a href="server.html#curriculum">커리큘럼</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="datastructure.html">자료구조</a>
+                    <ul class="dropdown-content">
+                        <li><a href="datastructure.html#intro">과목소개</a></li>
+                        <li><a href="datastructure.html#book">교재소개</a></li>
+                        <li><a href="datastructure.html#curriculum">커리큘럼</a></li>
+                    </ul>
+                </li>
+                <li><a href="devinfo.html">포트폴리오</a></li>
+            </ul>
+        </nav>
+        <div class="nav-right">
+            <button id="mode-toggle">🌙</button>
+        </div>
+    </header>
+
+    <!-- 배너 -->
+    <section class="banner">
+        <img src="images/datastructure_image.jpg" alt="자료구조" class="banner-image">
+        <h1 class="banner-title">자료구조</h1>
+    </section>
+
+<main class="subject-content">
+
+    <!-- 과목 소개 -->
+    <section id="intro" class="section-block">
+        <h2>과목 소개</h2>
+        <p>
+			본 교과목은 소프트웨어 개발에 필요한 핵심 기반인 자료구조의 개념과 활용 방법을 학습하고, 이를 실제 프로그래밍에 적용하는 실습을 통해 소프트웨어 개발 역량을 강화하는 데 목적이 있습니다. 자료의 효율적인 구성과 처리 방식을 이해하고, 이를 바탕으로 컴퓨터 프로그래밍 전반에 필요한 구조적 사고를 기를 수 있도록 구성되어 있습니다.
+			학습자는 다양한 데이터 구조에 대한 이론적 이해와 함께, 이를 설계, 코딩, 응용 단계에 효과적으로 적용하는 능력을 배양하게 됩니다. 이를 통해 소프트웨어 기획부터 구현에 이르기까지 전반적인 제작 과정에 필요한 분석 및 개발 능력을 체계적으로 함양할 수 있습니다.
+		</p>
+    </section>
+
+    <!-- 교재 소개 -->
+    <h2 id="book">교재 소개</h2>
+    <section class="section-block book-section">
+        <img src="images/datastructure_book.jpg" alt="자료구조 교재" class="subject-book-image">
+        <div class="book-description">
+            <p>
+                <strong>사용 교재:</strong> C언어로 쉽게 풀어쓴 자료구조<br>
+                <strong>저자:</strong> 천인국<br>
+                <strong>출판사:</strong> 생능출판사<br><br>
+                본 교재는 자료구조의 기본 개념부터 고급 주제까지 폭넓게 다루며, 실습 예제와 연습문제가 잘 구성되어 있어 학습에 적합합니다.
+            </p>
+        </div>
+    </section>
+
+    <!-- 커리큘럼 -->
+    <section id="curriculum" class="section-block">
+        <h2>커리큘럼</h2>
+
+        <details>
+            <summary><strong>1장: 순환법</strong></summary>
+            <p>#여기 내용 적기!#</p>
+			<div class="quiz-container">
+				<h3>퀴즈: DB에 대해 잘못 설명된것은?</h3>
+				<form id="quiz-form-1010">
+					<label><input type="radio" name="answer" value="1"> DB는 컴퓨터가 접근할 수 있는 저장 장치에 기록된 저장 데이터다</label><br>
+					<label><input type="radio" name="answer" value="2"> DB는 조직을 운영하는 데 반드시 필요한 운영 데이터다</label><br>
+					<label><input type="radio" name="answer" value="3"> DB는 한 조직의 여러 부서에서 사용하는 데이터를 중복이 전혀 없는 상태로 한 곳에 모아 관리하는 통합 데이터다</label><br>
+					<label><input type="radio" name="answer" value="4"> DB는 한 조직이 공용으로 사용하는 데이터다</label><br><br>
+					<button type="button" onclick="checkAnswerById('1010')">정답 확인</button>
+					<p id="quiz-result-1010" class="quiz-result"></p>
+				</form>
+			</div>
+        </details>
+        <details>
+            <summary><strong>2장: 배열, 구조체, 포인터</strong></summary>
+            <p>#여기 내용 적기!#</p>
+			<div class="quiz-container">
+				<h3>퀴즈: 테스트 (정답1)</h3>
+				<form id="quiz-form-9999">
+					<label><input type="radio" name="answer" value="1"> 테스트</label><br>
+					<label><input type="radio" name="answer" value="2"> 를 위한</label><br>
+					<label><input type="radio" name="answer" value="3"> 퀴즈</label><br>
+					<label><input type="radio" name="answer" value="4"> 목록입니다</label><br><br>
+					<button type="button" onclick="checkAnswerById('9999')">정답 확인</button>
+					<p id="quiz-result-9999" class="quiz-result"></p>
+				</form>
+			</div>
+        </details>
+        <details>
+            <summary><strong>3장: 스텍, 큐</strong></summary>
+            <p>#여기 내용 적기!#</p>
+			<div class="quiz-container">
+				<h3>퀴즈: 테스트 (정답1)</h3>
+				<form id="quiz-form-9999">
+					<label><input type="radio" name="answer" value="1"> 테스트</label><br>
+					<label><input type="radio" name="answer" value="2"> 를 위한</label><br>
+					<label><input type="radio" name="answer" value="3"> 퀴즈</label><br>
+					<label><input type="radio" name="answer" value="4"> 목록입니다</label><br><br>
+					<button type="button" onclick="checkAnswerById('9999')">정답 확인</button>
+					<p id="quiz-result-9999" class="quiz-result"></p>
+				</form>
+			</div>
+        </details>
+        <details>
+            <summary><strong>4장: 트리</strong></summary>
+            <p>#여기 내용 적기!#</p>
+			<div class="quiz-container">
+				<h3>퀴즈: 테스트 (정답1)</h3>
+				<form id="quiz-form-9999">
+					<label><input type="radio" name="answer" value="1"> 테스트</label><br>
+					<label><input type="radio" name="answer" value="2"> 를 위한</label><br>
+					<label><input type="radio" name="answer" value="3"> 퀴즈</label><br>
+					<label><input type="radio" name="answer" value="4"> 목록입니다</label><br><br>
+					<button type="button" onclick="checkAnswerById('9999')">정답 확인</button>
+					<p id="quiz-result-9999" class="quiz-result"></p>
+				</form>
+			</div>
+        </details>
+        <details>
+            <summary><strong>5장: 우선순위 큐</strong></summary>
+            <p>#여기 내용 적기!#</p>
+			<div class="quiz-container">
+				<h3>퀴즈: 테스트 (정답1)</h3>
+				<form id="quiz-form-9999">
+					<label><input type="radio" name="answer" value="1"> 테스트</label><br>
+					<label><input type="radio" name="answer" value="2"> 를 위한</label><br>
+					<label><input type="radio" name="answer" value="3"> 퀴즈</label><br>
+					<label><input type="radio" name="answer" value="4"> 목록입니다</label><br><br>
+					<button type="button" onclick="checkAnswerById('9999')">정답 확인</button>
+					<p id="quiz-result-9999" class="quiz-result"></p>
+				</form>
+			</div>
+        </details>
+        <details>
+            <summary><strong>6장: 정렬 알고리즘</strong></summary>
+            <p>#여기 내용 적기!#</p>
+			<div class="quiz-container">
+				<h3>퀴즈: 테스트 (정답1)</h3>
+				<form id="quiz-form-9999">
+					<label><input type="radio" name="answer" value="1"> 테스트</label><br>
+					<label><input type="radio" name="answer" value="2"> 를 위한</label><br>
+					<label><input type="radio" name="answer" value="3"> 퀴즈</label><br>
+					<label><input type="radio" name="answer" value="4"> 목록입니다</label><br><br>
+					<button type="button" onclick="checkAnswerById('9999')">정답 확인</button>
+					<p id="quiz-result-9999" class="quiz-result"></p>
+				</form>
+			</div>
+        </details>
+        <details>
+            <summary><strong>7장: 그래프</strong></summary>
+            <p>#여기 내용 적기!#</p>
+			<div class="quiz-container">
+				<h3>퀴즈: 테스트 (정답1)</h3>
+				<form id="quiz-form-9999">
+					<label><input type="radio" name="answer" value="1"> 테스트</label><br>
+					<label><input type="radio" name="answer" value="2"> 를 위한</label><br>
+					<label><input type="radio" name="answer" value="3"> 퀴즈</label><br>
+					<label><input type="radio" name="answer" value="4"> 목록입니다</label><br><br>
+					<button type="button" onclick="checkAnswerById('9999')">정답 확인</button>
+					<p id="quiz-result-9999" class="quiz-result"></p>
+				</form>
+			</div>
+        </details>
+        <details>
+            <summary><strong>8장: 탐색 알고리즘</strong></summary>
+            <p>#여기 내용 적기!#</p>
+			<div class="quiz-container">
+				<h3>퀴즈: 테스트 (정답1)</h3>
+				<form id="quiz-form-9999">
+					<label><input type="radio" name="answer" value="1"> 테스트</label><br>
+					<label><input type="radio" name="answer" value="2"> 를 위한</label><br>
+					<label><input type="radio" name="answer" value="3"> 퀴즈</label><br>
+					<label><input type="radio" name="answer" value="4"> 목록입니다</label><br><br>
+					<button type="button" onclick="checkAnswerById('9999')">정답 확인</button>
+					<p id="quiz-result-9999" class="quiz-result"></p>
+				</form>
+			</div>
+        </details>
+
+    </section>
+
+</main>
+
+    <!-- 바닥글 -->
+    <footer class="site-footer">
+        <p>© 2025 청운대학교 컴퓨터공학과</p>
+        <p>깃허브: <a href="~~Github 주소를 입력하세요~~" target="_blank">~~Github 주소~~</a></p>
+        <img src="images/footer_logo.svg" alt="학교 로고" class="footer-logo">
+    </footer>
+</body>
+</html>

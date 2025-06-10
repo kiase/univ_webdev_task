@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹클라이언트 프로그래밍 수업 소개</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body class="light-mode">
+    <!-- 네비게이션 바 -->
+    <header class="navbar">
+		<a href="index.html" class="subject-link">
+			<div class="nav-left">
+				<img src="images/logo.png" alt="학교 로고" class="school-logo">
+				<span class="site-title">수업 소개</span>
+			</div>
+		</a>
+        <nav class="nav-center">
+            <ul class="nav-menu">
+                <li><a href="index.html">메인</a></li>
+                <li class="dropdown">
+                    <a href="database.html">데이터베이스</a>
+                    <ul class="dropdown-content">
+                        <li><a href="database.html#intro">과목소개</a></li>
+                        <li><a href="database.html#book">교재소개</a></li>
+                        <li><a href="database.html#curriculum">커리큘럼</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="webprogramming.html">웹프로그래밍</a>
+                    <ul class="dropdown-content">
+                        <li><a href="webprogramming.html#intro">과목소개</a></li>
+                        <li><a href="webprogramming.html#book">교재소개</a></li>
+                        <li><a href="webprogramming.html#curriculum">커리큘럼</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="server.html">서버구축</a>
+                    <ul class="dropdown-content">
+                        <li><a href="server.html#intro">과목소개</a></li>
+                        <li><a href="server.html#book">교재소개</a></li>
+                        <li><a href="server.html#curriculum">커리큘럼</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="datastructure.html">자료구조</a>
+                    <ul class="dropdown-content">
+                        <li><a href="datastructure.html#intro">과목소개</a></li>
+                        <li><a href="datastructure.html#book">교재소개</a></li>
+                        <li><a href="datastructure.html#curriculum">커리큘럼</a></li>
+                    </ul>
+                </li>
+                <li><a href="devinfo.html">포트폴리오</a></li>
+            </ul>
+        </nav>
+        <div class="nav-right">
+            <button id="mode-toggle">🌙</button>
+        </div>
+    </header>
+
+    <!-- 배너 -->
+    <section class="banner">
+        <img src="images/webprogramming_image.png" alt="웹클라이언트 프로그래밍" class="banner-image">
+        <h1 class="banner-title">웹클라이언트 프로그래밍</h1>
+    </section>
+
+<main class="subject-content">
+
+    <!-- 과목 소개 -->
+    <section id="intro" class="section-block">
+        <h2>과목 소개</h2>
+        <p>
+			본 교과목은 현대 사회에서 일상적으로 활용되는 인터넷과 WWW 서비스의 기본 개념을 이해하고, 이를 기반으로 웹사이트를 제작하여 인터넷에 출판하는 과정을 학습하는 데 목적이 있습니다. 수업을 통해 웹 콘텐츠 저작 언어인 HTML과 CSS, 그리고 동적인 웹 페이지 구현을 위한 JavaScript의 기초 개념과 활용 방법을 익히게 됩니다.
+			학습자는 온라인 콘텐츠를 활용하여 정적 또는 동적인 웹사이트를 직접 제작하고, 제작한 웹사이트를 실제로 인터넷에 게시해보는 실습 경험을 통해 웹 기반 정보 전달 능력을 기를 수 있습니다. 본 교과목은 웹의 구조적 이해와 더불어, 콘텐츠 기획부터 구현, 출판까지의 전 과정을 경험할 수 있도록 구성되어 있습니다.
+		</p>
+    </section>
+
+    <!-- 교재 소개 -->
+    <h2 id="book">교재 소개</h2>
+    <section class="section-block book-section">
+        <img src="images/webprogramming_book.png" alt="웹클라이언트 프로그래밍 교재" class="subject-book-image">
+        <div class="book-description">
+            <p>
+                <strong>사용 교재:</strong> <a href="https://w3schools.com">w3schools.com</a><br>
+                <strong>저자:</strong> 온라인 웹 페이지<br>
+                <strong>출판사:</strong> 온라인 웹 페이지<br><br>
+                본 웹사이트는 다양한 프로그래밍 언어를 배울 수 있도록 구성된 도큐먼트 형태의 웹사이트입니다. 웹에서 직접 코드를 실행하는 기능을 포함하여 학습에 효과적입니다.
+            </p>
+        </div>
+    </section>
+
+    <!-- 커리큘럼 -->
+    <section id="curriculum" class="section-block">
+        <h2>커리큘럼 (w3schools에서 추출됨)</h2>
+
+        <details>
+            <summary><strong>1. HTML</strong></summary>
+            <p>HTML is the standard markup language for Web pages. With HTML you can create your own Website. HTML is easy to learn - You will enjoy it!</p>
+			<div class="quiz-container">
+				<h3>퀴즈: 양식을 정의하는 데 적합한 HTML 요소는 무엇입니까?</h3>
+				<form id="quiz-form-1021">
+					<label><input type="radio" name="answer" value="1"> &lt;schema&gt;</label><br>
+					<label><input type="radio" name="answer" value="2"> &lt;ff&gt;</label><br>
+					<label><input type="radio" name="answer" value="3"> &lt;form&gt;</label><br>
+					<label><input type="radio" name="answer" value="4"> &lt;label&gt;</label><br><br>
+					<button type="button" onclick="checkAnswerById('1021')">정답 확인</button>
+					<p id="quiz-result-1021" class="quiz-result"></p>
+				</form>
+			</div>
+			<div class="quiz-container">
+				<h3>퀴즈: 양식에서 관련 데이터를 그룹화하고, 기본적으로 테두리를 그리는 데 적합한 HTML 요소는 무엇입니까?</h3>
+				<form id="quiz-form-1022">
+					<label><input type="radio" name="answer" value="1"> &lt;group&gt;</label><br>
+					<label><input type="radio" name="answer" value="2"> &lt;fieldset&gt;</label><br>
+					<label><input type="radio" name="answer" value="3"> &lt;fence&gt;</label><br>
+					<label><input type="radio" name="answer" value="4"> &lt;output&gt;</label><br><br>
+					<button type="button" onclick="checkAnswerById('1022')">정답 확인</button>
+					<p id="quiz-result-1022" class="quiz-result"></p>
+				</form>
+			</div>
+        </details>
+        <details>
+            <summary><strong>2. CSS</strong></summary>
+            <p>CSS is the language we use to style an HTML document. CSS describes how HTML elements should be displayed. This tutorial will teach you CSS from basic to advanced.</p>
+			<div class="quiz-container">
+				<h3>퀴즈: 아래 div 요소를 너비 300px, 페딩 25px, 보더 10px 초록색으로 설정하기 위해 올바르게 나열된 것은 무엇입니까?<br> div { width: __1__;  padding: __2__;  border: 10px solid __3__; }</h3>
+				<form id="quiz-form-1023">
+					<label><input type="radio" name="answer" value="1"> 25px, 300px, green</label><br>
+					<label><input type="radio" name="answer" value="2"> green, 300px, 25px</label><br>
+					<label><input type="radio" name="answer" value="3"> 300px, 25px, blue</label><br>
+					<label><input type="radio" name="answer" value="4"> 300px, 25px, green</label><br><br>
+					<button type="button" onclick="checkAnswerById('1023')">정답 확인</button>
+					<p id="quiz-result-1023" class="quiz-result"></p>
+				</form>
+			</div>
+        </details>
+        <details>
+            <summary><strong>3. JavaScript</strong></summary>
+            <p>JavaScript is the world's most popular programming language. JavaScript is the programming language of the Web. JavaScript is easy to learn. This tutorial will teach you JavaScript from basic to advanced.</p>
+			<div class="quiz-container">
+				<h3>퀴즈: 테스트 (정답1)</h3>
+				<form id="quiz-form-9999">
+					<label><input type="radio" name="answer" value="1"> 테스트</label><br>
+					<label><input type="radio" name="answer" value="2"> 를 위한</label><br>
+					<label><input type="radio" name="answer" value="3"> 퀴즈</label><br>
+					<label><input type="radio" name="answer" value="4"> 목록입니다</label><br><br>
+					<button type="button" onclick="checkAnswerById('9999')">정답 확인</button>
+					<p id="quiz-result-9999" class="quiz-result"></p>
+				</form>
+			</div>
+        </details>
+
+    </section>
+
+</main>
+
+    <!-- 바닥글 -->
+    <footer class="site-footer">
+        <p>© 2025 청운대학교 컴퓨터공학과</p>
+        <p>깃허브: <a href="~~Github 주소를 입력하세요~~" target="_blank">~~Github 주소~~</a></p>
+        <img src="images/footer_logo.svg" alt="학교 로고" class="footer-logo">
+    </footer>
+</body>
+</html>
